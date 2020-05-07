@@ -7,6 +7,13 @@
 
     {%- include header.html -%}
 
+    <h2>{{ site.data.listadeartistas.docs_list_title }}</h2>
+     <ul>
+      {% for item in site.data.listadeartistas.docs %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
