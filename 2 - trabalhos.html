@@ -1,0 +1,11 @@
+---
+layout: trabalhos
+title: Trabalhos
+permalink: /trabalhos/
+---
+
+{%- for item in site.trabalhos -%}
+	<p class="trabalhos-title">{{ item.title }}</p>
+	<img src="{{ site.baseurl }}{{ page.foto }}"/>
+	<p class="trabalhos-description">{{ item.description }}</p>
+{%- endfor -%}

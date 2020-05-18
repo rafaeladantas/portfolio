@@ -1,14 +1,14 @@
-docs_list_title:
-docs:
+# docs_list_title:
+# docs:
 
-- title: Sobre mim
-  url: sobremim.html
+# - title: Sobre mim
+#   url: sobremim.html
 
-- title: Trabalhos
-  url: trabalhos.html
+# - title: Trabalhos
+#   url: trabalhos.html
 
-- title: Clientes
-  url: clientes.html
+# - title: Clientes
+#   url: clientes.html
 
-- title: Contato
-  url: contato.html
+# - title: Contato
+#   url: contato.html
