@@ -35,9 +35,9 @@ plugins:
   - jekyll-feed
 
 collections:
-  trabalhos:
+  projetos:
     output: true
-    permalink: /trabalhos/:path/
+    permalink: /projetos/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
