@@ -2,17 +2,24 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  // border-top: 5px solid $grey-color-dark;
+  // border-bottom: 1px solid $grey-color-light; 
   min-height: $spacing-unit * 1.865;
+  background-color: $brand-blue;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
+.image-home {
+  display: block;
+  margin-top: 180px;
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
+  margin-top: 10px;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -26,7 +33,8 @@
 
 .site-nav {
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  margin-top: 25px;
+  // line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
       display: none;
@@ -37,8 +45,9 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: #fff;
     line-height: $base-line-height;
+
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -48,11 +57,12 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 20px;
+    margin-top: 0px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    background-color: #fff;
+    // border: 2px solid $brand-blue;
+    border-radius: 2px;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -64,6 +74,11 @@
       cursor: pointer;
     }
 
+    .page-link {
+    color: $brand-blue;
+    line-height: $base-line-height * 2;
+      }
+
     .menu-icon {
       display: block;
       float: right;
@@ -74,7 +89,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $brand-blue;
       }
     }
 
