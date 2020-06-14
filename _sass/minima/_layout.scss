@@ -34,6 +34,98 @@
   }
 }
 
+.descricao-page {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.images-cover {
+  width: 100%;
+}
+
+.images-topics {
+  width: 100px;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top:50px;
+}
+
+.caixa {
+  text-align: center;
+  width: 90px
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4 {
+  margin-bottom: 50px;
+}
+
+@media(max-width: $on-palm) {
+  .caixa1, .caixa2, .caixa3, .caixa4  {
+    width: 100%;
+  }
+}
+
+.grid-container {
+    display: grid;
+    // grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-column-gap: 50px;
+    
+
+   @include media-query($on-palm) {
+    grid-template-columns: 100%;
+
+   }
+}
+
+  .grid-trabalhos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-container-sobre {
+    display: grid;
+    grid-template-columns: 100%;
+    // grid-column-gap: 50px;
+    
+
+   @include media-query($on-palm) {
+    grid-template-columns: 100%;
+
+   }
+}
+
+  .grid-sobre {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .titulo-conteudo-sobre {
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  .descricao-conteudo-sobre {
+    line-height: 20px;
+    margin-top: 15px;
+  }
+
+  .ano-conteudo-sobre {
+    line-height: 15px;
+    margin-top: 15px;
+  }
+
+  .title {
+    line-height: 20px;
+    font-weight: 800;
+    font-size: 22px;
+  }
+
 .site-nav {
   float: right;
   margin-top: 25px;
@@ -58,8 +150,9 @@
     }
   }
 
+
   @include media-query($on-palm) {
-    position: absolute;
+    position: fixed;
     top: 20px;
     margin-top: 0px;
     right: $spacing-unit / 2;

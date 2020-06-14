@@ -4,15 +4,30 @@ title: Trabalhos
 permalink: /trabalhos/
 ---
 
-<h1 class="post-title">Veja meus projetos!</h1>
+<h2 class="post-title">Trabalhos</h2>
 
-<div class="descricao-trabalhos">
-	<p>Aqui você pode ver um pouco mais sobre alguns projetos que já tive o prazer o de participar. Desde projetos gráficos a projetos digitais, alguns são projetos que participei na empresa em que trabalho e outros como freelancer.</p>
+<div class="descricao-page">
+
+	Aqui você pode ver um pouco mais sobre alguns projetos que já tive o prazer o de participar. Desde projetos gráficos a projetos digitais, alguns são projetos que participei na empresa em que trabalho e outros como freelancer.
+
 </div>
 
-{% for page in site.projetos reversed %}
+<!-- {% for page in site.projetos reversed %}
 	<p><li style="list-style-type:none"><a href="{{ page.link }}" target="_blank">
 	<img src="{{site.baseurl}}/assets/images/trabalhos/{{page.cover}}" alt="{{ page.title }}"></a></li>
 	</p>
 	<p>{{page.descricao}}</p>
+{% endfor %} -->
+
+<div class="grid-container">
+
+{% for page in site.projetos reversed %}
+	<div class="grid-trabalhos">
+		<a href="{{ page.link }}" target="_blank">
+			<p class="title">{{ page.title }}</p>
+			<img src="{{ site.baseurl }}/assets/images/trabalhos/{{ page.cover }}" alt="{{ page.title }}"/>
+		</a>
+	</div>
 {% endfor %}
+
+</div>
