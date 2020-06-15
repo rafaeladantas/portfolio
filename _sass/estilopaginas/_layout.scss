@@ -14,9 +14,15 @@
   width: 100%;
 }
 
+.alinhamento-home {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+
+}
+
 .image-home {
-  display: block;
-  margin-top: 180px;
+  width: 700px;
 }
 
 .site-title {
@@ -43,12 +49,11 @@
   width: 100%;
 }
 
-
 .container-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top:50px;
+  margin-top: 90px;
 }
 
 .caixa {
@@ -113,17 +118,14 @@
    }
 }
 
-
 .grid-trabalhos {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
-
 @include media-query($on-palm) {
   grid-template-columns: 100%;
 }
-
 
   .grid-sobre {
     margin-top: 70px;
@@ -142,7 +144,7 @@
 
   .ano-conteudo-sobre {
     line-height: 15px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
   .title {
@@ -174,7 +176,6 @@
       margin-right: 30px;
     }
   }
-
 
   @include media-query($on-palm) {
     position: fixed;
@@ -236,7 +237,9 @@
   }
 }
 
-
+.form-alinhamento {
+  margin-top: 70px;
+}
 
 /**
  * Site footer
