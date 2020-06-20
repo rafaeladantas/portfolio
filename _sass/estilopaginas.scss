@@ -3,29 +3,23 @@
 /* Valores das variáveis */
 $base-font-family: Inconsolata, monospace, "Apple Color Emoji" !default;
 $base-font-size:   18px !default;
+$base-font-size-g: 22px !default;
 $base-font-weight: 400 !default;
 $base-font-weight-titulos: 800 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
 
 $base-line-height: 1.3 !default;
 $spacing-unit:     40px !default;
 
 $text-color:       #111 !default;
-$brand-color:      #0000FF !default;
 $brand-blue:	   #0000ff !default;
 $brand-yellow:     #fbe303 !default;
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
-$table-text-align: left !default;
 
 $content-width:    960px !default;
 $on-palm:          320px !default;
 $on-laptop:        1440px !default;
 
 
-/* Mixins */
+/* Mixins para devices */
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -34,6 +28,28 @@ $on-laptop:        1440px !default;
 
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
+}
+
+
+/* Mixins para títulos */
+@mixin titulos1 {
+	font-size: $base-font-size-g;
+	line-height: 25px;
+	font-weight: $base-font-weight-titulos;
+  	color: $brand-blue;
+}
+
+@mixin titulos2 {
+	font-size: $base-font-size-g;
+	font-weight: $base-font-weight-titulos;
+	color: $text-color;
+}
+
+@mixin textos {
+	font-size: $base-font-size;
+	line-height: 18px;
+	font-weight: $base-font-weight;
+	color: $text-color;
 }
 
 

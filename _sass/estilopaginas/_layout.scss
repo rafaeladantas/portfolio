@@ -16,7 +16,6 @@
 .site-nav {
   float: right;
   margin-top: 25px;
-  // line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
     display: none;
@@ -30,8 +29,6 @@
     color: #fff;
     line-height: $base-line-height;
 
-
-    // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -206,27 +203,8 @@
 }
 
 /* Conteúdo da grid*/
-.sobre-first {
-  line-height: 25px;
-  margin-bottom: 10px;
-  font-weight: 800;
-}
-
-.ano-conteudo-sobre {
-  line-height: 15px;
-  margin-top: 5px;
-}
-
-.titulo-conteudo-sobre {
-  line-height: 25px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  font-weight: 800;
-}
-
-.descricao-conteudo-sobre {
-  line-height: 20px;
-  margin-top: 15px;
+.espacamento1 {
+  margin-top: 80px;
 }
 
 
@@ -287,7 +265,7 @@
 */
 
 .form-alinhamento {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 
@@ -353,12 +331,13 @@
 
 /* Títulos */
 .site-title {
+  width: 36px;
   @include relative-font-size(1.625);
   font-weight: 300;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-bottom: 0;
   float: left;
 }
 
@@ -373,9 +352,6 @@
 }
 
 /* Posts */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
 
 .post-title {
   @include relative-font-size(2.625);
@@ -387,75 +363,25 @@
   }
 }
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
-}
-
-.post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
-  }
-}
-
-/* Inputs */
+/* Inputs, buttons e labels */
 input[type=text] {
   width: 100%;
   height: 40px;
+  margin-bottom: 30px;
 }
 
-input[type=submit] {
+button {
   width: 120px;
   height: 40px;
   font: $base-font-family;
   background-color: $brand-blue;
-  border: none;
   color: $brand-yellow;
+  border: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+button:hover {
       background-color: darken($brand-blue, 20%);
     } 
 
@@ -463,4 +389,9 @@ input[type="textarea"],
 textarea {
     width: 100%;
     height: 120px;
+    margin-bottom: 30px;
+}
+
+label {
+  font-weight: 800;
 }
