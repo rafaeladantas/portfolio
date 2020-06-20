@@ -1,37 +1,31 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
-// Define defaults for each variable.
-
-$base-font-family: Inconsolata, monospace, "Apple Color Emoji",!default;
+/* Valores das variáveis */
+$base-font-family: Inconsolata, monospace, "Apple Color Emoji" !default;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $base-font-weight-titulos: 800 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.3 !default;
 
+$base-line-height: 1.3 !default;
 $spacing-unit:     40px !default;
 
 $text-color:       #111 !default;
-$background-color: #ffe600 !default;
 $brand-color:      #0000FF !default;
-$brand-blue:	   #0000ff;
-$brand-blue-hard:  #001b95;
-$brand-yellow:     #ffe600;
-
+$brand-blue:	   #0000ff !default;
+$brand-yellow:     #fbe303 !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
-// Width of the content area
 $content-width:    960px !default;
-
 $on-palm:          320px !default;
 $on-laptop:        1440px !default;
 
 
+/* Mixins */
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -42,9 +36,12 @@ $on-laptop:        1440px !default;
   font-size: $base-font-size * $ratio;
 }
 
-// Import partials.
+
+/* Impots */
 @import
   "estilopaginas/base",
   "estilopaginas/layout",
   "estilopaginas/syntax-highlighting"
 ;
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
