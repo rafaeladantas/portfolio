@@ -12,12 +12,6 @@ permalink: /trabalhos/
 
 </div>
 
-<!-- {% for page in site.projetos reversed %}
-	<p><li style="list-style-type:none"><a href="{{ page.link }}" target="_blank">
-	<img src="{{site.baseurl}}/assets/images/trabalhos/{{page.cover}}" alt="{{ page.title }}"></a></li>
-	</p>
-	<p>{{page.descricao}}</p>
-{% endfor %} -->
 
 <div class="grid-container">
 
@@ -25,7 +19,9 @@ permalink: /trabalhos/
 	<div class="grid-trabalhos">
 		<a href="{{ page.link }}" target="_blank">
 			<p class="title">{{ page.title }}</p>
-			<img src="{{ site.baseurl }}/assets/images/trabalhos/{{ page.cover }}" alt="{{ page.title }}"/>
+			<div class="imagem-trabalhos">
+				<img src="{{ site.baseurl }}/assets/images/trabalhos/{{ page.cover }}" alt="{{ page.title }}"/>
+			</div>
 		</a>
 	</div>
 {% endfor %}
